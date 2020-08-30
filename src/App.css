@@ -1,4 +1,26 @@
 .App {
+  /* text-align: center; */
+  justify-content: center;
+  background-color: #e9ebee;
+}
+
+.container{
+  /* background-color: burlywood; */
+  padding: 5px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.SeeAll{
+  float: right;
+}
+
+.past-meetups{
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright{
   text-align: center;
 }
 
@@ -11,6 +33,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+  .gambar {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
 }
 
 .App-header {
