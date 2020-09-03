@@ -2,11 +2,11 @@ import React from 'react'
 
 import './EventImage.css';
 
-const Avatar = ({url}) => {
+const Avatar = ({url, alt}) => {
     return (
         <div>
             <img src={url}
-                alt="Event pict"
+                alt={alt}
                 className="eventImg" 
             />
         </div>

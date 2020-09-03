@@ -2,11 +2,11 @@ import React from 'react';
 
 import './NextMeetupCard.css';
 
-const NextMeetupCard = () => {
+const NextMeetupCard = (props) => {
     return (
         <div className="bg-card">
-            <b>Awesome Meetup and event</b><br />
-            <text className="date">25 January 2019</text>
+            <b>{props.next_title}</b><br />
+            <text className="date">{props.date}</text>
             <br></br>
             <p>
                Hello, Javascript & Node.js Ninjas!<br></br>

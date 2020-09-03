@@ -1,13 +1,13 @@
 import React from 'react'
 
-import avatar from '../../Assets/avatar.jpg';
+// import avatar from '../../Assets/avatar.jpg';
 
 import './Avatar.css';
 
-const Avatar = () => {
+const Avatar = ({url}) => {
     return (
         <div>
-            <img src={avatar}
+            <img src={url}
                 alt="Avatar"
                 className="avatar" 
             />
