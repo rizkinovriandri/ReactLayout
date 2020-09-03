@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Avatar from '../Avatar/Avatar';
+import EventImage from '../EventImage/EventImage';
 import BtnJoin from '../BtnJoin/BtnJoin';
 
 import './MeetupCard.css';
@@ -8,7 +8,7 @@ import './MeetupCard.css';
 const MeetupCard = () => {
     return (
         <div className="MeetupCard">
-            <Avatar/>
+            <EventImage url = 'https://disk.mediaindonesia.com/thumbs/600x400/news/2019/02/96f1ff2aa73d163fb9c0a2a854221a23.jpg'/>
             <div className="MeetupDesc">
                 <h1>Hacktiv8 Meetup</h1>
                 <p>Location : Jakarta , Indonesia</p>

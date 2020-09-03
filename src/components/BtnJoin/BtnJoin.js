@@ -4,7 +4,7 @@ import './BtnJoin.css';
 
 const BtnJoin = (props) => {
     return (
-        <button>{props.text}</button>
+        <button className="btnComponent">{props.text}</button>
     );
 }
 

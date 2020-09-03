@@ -1,12 +1,11 @@
 .PastMeetupCard{
     width: 30%;
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     background-color: white;
     border: #caccd1 solid thin;
     border-radius: 5px;
     padding: 10px;
-    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px ;
 }

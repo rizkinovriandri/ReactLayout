@@ -10,8 +10,26 @@ import NextMeetupCard from './components/NextMeetupCard/NextMeetupCard';
 import MembersCard from './components/MembersCard/MembersCard';
 import PastMeetupCard from './components/PastMeetupCard/PastMeetupCard';
 
+const PastMeetup = [
+  {
+    date : '27 November 2017',
+    event_desc : '#39 JakartaJS April Meetup with Kumparan',
+    attendees : 139,
+  },
+  {
+    date : '27 Oktober 2017',
+    event_desc : '#38 JakartaJS April Meetup with Blibli',
+    attendees : 113,
+  },
+  {
+    date : '27 September 2017',
+    event_desc : '#37 JakartaJS April Meetup with Hacktiv8',
+    attendees : 110,
+  }
+]
 
 function App() {
+
   return (
     <div className="App">
 
@@ -38,9 +56,12 @@ function App() {
           <text className="SeeAll">See all</text><br />
         </div>
         <div className="past-meetups">
-          <PastMeetupCard date="27 November 2017" event_desc="#39 JakartaJS April Meetup with Kumparan" attendees={139}/>
+
+          <PastMeetupCard data = {PastMeetup}/>
+
+          {/* <PastMeetupCard date="27 November 2017" event_desc="#39 JakartaJS April Meetup with Kumparan" attendees={139}/>
           <PastMeetupCard date="27 Oktober 2017" event_desc="#38 JakartaJS April Meetup with Blibli" attendees={113}/>
-          <PastMeetupCard date="27 September 2017" event_desc="#37 JakartaJS April Meetup with Hacktiv8" attendees={110}/>
+          <PastMeetupCard date="27 September 2017" event_desc="#37 JakartaJS April Meetup with Hacktiv8" attendees={110}/> */}
         </div>
         <br />
         <hr></hr>
