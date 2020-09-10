@@ -1,12 +1,14 @@
 import React from 'react';
 
-import './NextMeetupCard.css';
+import { BgCard, Date } from "./NextMeetupCard.style";
+
+// import './NextMeetupCard.css';
 
 const NextMeetupCard = (props) => {
     return (
-        <div className="bg-card">
+        <BgCard>
             <b>{props.next_title}</b><br />
-            <text className="date">{props.date}</text>
+            <Date>{props.date}</Date>
             <br></br>
             <p>
                Hello, Javascript & Node.js Ninjas!<br></br>
@@ -20,7 +22,7 @@ const NextMeetupCard = (props) => {
                Best, Hengki, Giovanni, Sofian, Riza, Agung The JakartaJS Organizers.
                
             </p>
-        </div>
+        </BgCard>
     );
 }
 

@@ -1,16 +1,14 @@
 import React from 'react'
+import { AvatarRound } from "./Avatar.style";
 
 // import avatar from '../../Assets/avatar.jpg';
 
-import './Avatar.css';
+//import './Avatar.css';
 
 const Avatar = ({url}) => {
     return (
-        <div>
-            <img src={url}
-                alt="Avatar"
-                className="avatar" 
-            />
+        <div> 
+            <AvatarRound src={url} alt="Avatar"/>
         </div>
     );
 }

@@ -1,10 +1,13 @@
 import React from 'react';
 
-import './BtnJoin.css';
+import { BtnComponent } from "./BtnJoin.style";
+
+// import './BtnJoin.css';
 
 const BtnJoin = (props) => {
     return (
-        <button className="btnComponent">{props.text}</button>
+            <BtnComponent primary={props.primary}>{props.text}</BtnComponent>
+        
     );
 }
 

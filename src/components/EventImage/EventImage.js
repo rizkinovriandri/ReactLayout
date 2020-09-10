@@ -1,13 +1,14 @@
 import React from 'react'
 
-import './EventImage.css';
+import { EventImg } from "./EventImage.style";
+
+// import './EventImage.css';
 
 const Avatar = ({url, alt}) => {
     return (
         <div>
-            <img src={url}
+            <EventImg src={url}
                 alt={alt}
-                className="eventImg" 
             />
         </div>
     );

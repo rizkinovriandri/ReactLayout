@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import BtnJoin from '../BtnJoin/BtnJoin';
 
-import './PastMeetupCard.css';
+import { PastMeetupCardBg, PastMeetupDesc, Went } from "./PastMeetupCard.style";
+
+// import './PastMeetupCard.css';
 
 const PastMeetupCard = ({data}) => {
     return (
@@ -11,15 +13,15 @@ const PastMeetupCard = ({data}) => {
                 
                     {
                         data.map((item) => (
-                            <div className="PastMeetupCard">
-                                <div className="PastMeetupDesc">
+                            <PastMeetupCardBg>
+                                <PastMeetupDesc>
                                     <b>{item.date}</b>
                                     <hr></hr>
                                     <p>{item.event_desc}</p>
-                                    <p>{item.attendees} &nbsp;<text className="went">went</text></p>
-                                    <BtnJoin text="View" ></BtnJoin>
-                                </div>
-                            </div>
+                                    <p>{item.attendees} &nbsp;<Went>went</Went></p>
+                                    <BtnJoin primary="primary" text="View" ></BtnJoin>
+                                </PastMeetupDesc>
+                            </PastMeetupCardBg>
                         ))
                     }
                 
