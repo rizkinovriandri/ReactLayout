@@ -29,10 +29,10 @@ const PastMeetupCard = ({data}) => {
     );
 }
 
-PastMeetupCard.propTypes = {
-    date: PropTypes.string.isRequired, // validasi props tanggal
-    event_desc : PropTypes.string.isRequired, // validasi props description
-    attendees : PropTypes.number.isRequired, // validasi props peserta
-  };
+// PastMeetupCard.propTypes = {
+//     date: PropTypes.string.isRequired, // validasi props tanggal
+//     event_desc : PropTypes.string.isRequired, // validasi props description
+//     attendees : PropTypes.number.isRequired, // validasi props peserta
+//   };
 
 export default PastMeetupCard;
